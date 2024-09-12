@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zakat Calculator</title>
+	<link rel="stylesheet" type="text/css" href="zakat.css">
+</head>
+<body>
+	<div class="calculator">
+		<h1>Zakat Calculator</h1>
+		<form>
+			<div class="form-group">
+				<label for="assets">Total assets (USD)</label>
+				<input type="number" id="assets" step="0.01" value="10000">
+			</div>
+			<div class="form-group">
+				<label for="liabilities">Liabilities (USD)</label>
+				<input type="number" id="liabilities" step="0.01" value="2000">
+			</div>
+			<div class="form-group">
+				<label for="foodExemption">Food exemption (USD)</label>
+				<input type="number" id="foodExemption" step="0.01" value="140">
+			</div>
+			<div class="form-group">
+				<label for="jewelryExemption">Jewelry exemption (USD)</label>
+				<input type="number" id="jewelryExemption" step="0.01" value="100">
+			</div>
+			<div class="form-group">
+				<button type="button" id="calculate">Calculate Zakat</button>
+			</div>
+			<div class="form-group">
+				<label for="result">Zakat Payable:</label>
+				<input type="number" id="result" step="0.01" readonly></input>
+			</div>
+		</form>
+	</div>
+	<script src="zakat.js"></script>
+</body>
+</html>
